@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-starter-template",
+  "name": "react-redux-webpack-starter-template",
   "version": "1.0.0",
-  "description": "React webpack starter template",
+  "description": "React Redux Webpack starter template",
   "main": "src/index.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server",
@@ -9,13 +9,14 @@
   },
   "keywords": [
     "react",
+    "redux",
+    "react-redux",
     "webpack",
     "starter template"
   ],
   "author": "steve232np@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.6",
