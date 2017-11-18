@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export class FormContactUs extends Component {
+export default class FormContactUs extends Component {
   handleInputChange(e) {
     const target = e.target;
     const val = target.type === 'checkbox' ? target.checked : target.value;

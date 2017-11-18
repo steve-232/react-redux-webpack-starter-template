@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { PageAbout } from './PageAbout'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PageAbout from './About';
 
-export class PageHome extends Component {
+export default class PageHome extends Component {
   render() {
     return (
       <div>

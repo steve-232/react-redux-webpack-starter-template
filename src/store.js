@@ -1,10 +1,10 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import fruitReducer from './reducers/fruitReducer'
-import { createLogger } from 'redux-logger'
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import FruitReducer from './reducers/FruitReducer';
+import { createLogger } from 'redux-logger';
 
 export default createStore(
   combineReducers({
-    fruit: fruitReducer
+    fruit: FruitReducer
   }),
   applyMiddleware(createLogger())
 );

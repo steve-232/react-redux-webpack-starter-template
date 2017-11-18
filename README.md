@@ -20,8 +20,8 @@ Features:
 
 ## Usage
 Run
-* `npm start` for developing
-* `npm production` for final version
+* `npm run dev` for developing
+* `npm run prod` for final version
 
 ## License
 [MIT license](http://www.opensource.org/licenses/MIT)

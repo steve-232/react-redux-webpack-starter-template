@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { addApple, addPear } from '../actions/fruitActions'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addApple, addPear } from '../actions/FruitActions';
 
 class PageFruit extends Component {
   addApple(e) {
@@ -20,7 +20,6 @@ class PageFruit extends Component {
     this.props.addPear({pear:currentVal});
   }
   render() {
-    console.log(this);
     return (
       <div className="wrapper">
         <h3>Fruit</h3>

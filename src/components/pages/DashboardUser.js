@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export const PageDashboardUser = () => {
+export default () => {
   return (
     <div>
       <h3>User dashboard</h3>

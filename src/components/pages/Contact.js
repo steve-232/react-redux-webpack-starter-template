@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
-import { PageContactLosAngeles } from './PageContactLosAngeles'
-import { PageContactLondon } from './PageContactLondon'
+import React, { Component } from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
+import PageContactLosAngeles from './ContactLosAngeles';
+import PageContactLondon from './ContactLondon';
 
-export class PageContact extends Component {
+export default class PageContact extends Component {
   render() {
     return (
       <div className="wrapper">

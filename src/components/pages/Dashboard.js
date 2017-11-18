@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
-import { PageDashboardUser } from './PageDashboardUser'
-import { PageDashboardAdmin } from './PageDashboardAdmin'
+import React, { Component } from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
+import PageDashboardUser from './DashboardUser';
+import PageDashboardAdmin from './DashboardAdmin';
 
-export class PageDashboard extends Component {
+export default class PageDashboard extends Component {
   render() {
     return (
       <div>

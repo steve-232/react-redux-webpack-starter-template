@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { FormContactUs } from '../FormContactUs'
+import React, { Component } from 'react';
+import FormContactUs from '../FormContactUs';
 
-export class PageContactLondon extends Component {
+export default class PageContactLondon extends Component {
   render() {
     return (
       <div>

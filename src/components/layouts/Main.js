@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
-import { PageHome } from '../pages/PageHome'
-import { PageAbout } from '../pages/PageAbout'
-import { PageContact } from '../pages/PageContact'
-import PageFruit from '../../containers/PageFruit'
-import { Page404 } from '../pages/Page404'
-import { LocationNav } from '../LocationNav'
+import React, { Component } from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
+import PageHome from '../pages/Home';
+import PageAbout from '../pages/About';
+import PageContact from '../pages/Contact';
+import PageFruit from '../../containers/PageFruit';
+import Page404 from '../pages/404';
+import LocationNav from '../LocationNav';
 
-export class LayoutMain extends Component {
+export default class LayoutMain extends Component {
   render() {
-
     return (
       <div className="wrapper">
         <LocationNav props={this.props} />
