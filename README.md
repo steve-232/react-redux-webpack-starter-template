@@ -21,7 +21,7 @@ Features:
 ## Usage
 Run
 * `npm run dev` for developing
-* `npm run prod` for final version
+* `npm run prod` for final version *( Entire code will be minified in one file. All console.log() and redux-logger functions will be removed from that file )*
 
 ## License
 [MIT license](http://www.opensource.org/licenses/MIT)

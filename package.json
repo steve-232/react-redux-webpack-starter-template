@@ -4,8 +4,8 @@
   "description": "React Redux Webpack starter template",
   "main": "src/index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server",
-    "prod": "webpack -p"
+    "dev": "set NODE_ENV=dev&&webpack-dev-server",
+    "prod": "set NODE_ENV=prod&&webpack -p"
   },
   "keywords": [
     "react",
@@ -36,6 +36,7 @@
     "redux-logger": "^3.0.6",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^1.1.1",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
