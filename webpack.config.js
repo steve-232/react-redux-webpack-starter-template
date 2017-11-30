@@ -3,9 +3,28 @@ var path = require("path");
 var extractTextPlugin = require("extract-text-webpack-plugin");
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var env = process.env.NODE_ENV;
-var drop_console = false;
+var plugins = [
+  new extractTextPlugin({
+   filename: 'main.css'
+  }),
+  new webpack.DefinePlugin({
+    'process.env':{
+      'NODE_ENV': JSON.stringify(env)
+    }
+  }),
+]
 
-if (env === 'prod') drop_console = true;
+if (env === 'prod') {
+  plugins.push(
+    new UglifyJSPlugin({
+      uglifyOptions: {
+        compress: {
+          drop_console: true
+        }
+      }
+    })
+  )
+}
 
 module.exports = {
   entry: "./src/index.js",
@@ -48,21 +67,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new extractTextPlugin({
-     filename: 'main.css'
-    }),
-    new webpack.DefinePlugin({
-      'process.env':{
-        'NODE_ENV': JSON.stringify(env)
-      }
-    }),
-    new UglifyJSPlugin({
-      uglifyOptions: {
-        compress: {
-          drop_console: drop_console
-        }
-      }
-    })
-  ]
+  plugins: plugins
 };
