@@ -9,7 +9,7 @@ const reducers = combineReducers({
 const middleware = applyMiddleware(createLogger());
 let store = null;
 
-if (env === 'prod') {
+if (env === 'production') {
   store = createStore(reducers);
 } else {
   store = createStore(reducers, middleware);

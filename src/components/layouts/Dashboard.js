@@ -10,7 +10,7 @@ export default class LayoutDashboard extends Component {
         <LocationNav props={this.props} />
 
         <Switch>
-          <Route path="/dashboard" component={PageDashboard} />
+          <Route path="/" component={PageDashboard} />
         </Switch>
       </div>
     )

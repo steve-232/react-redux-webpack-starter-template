@@ -1,11 +1,15 @@
 {
   "name": "react-redux-webpack-starter-template",
   "version": "1.0.0",
-  "description": "React Redux Webpack starter template",
+  "description": "React Redux Webpack starter template for React.js single page apps",
   "main": "src/index.js",
   "scripts": {
-    "dev": "set NODE_ENV=dev&&webpack-dev-server",
-    "prod": "set NODE_ENV=prod&&webpack -p"
+    "dev": "NODE_ENV=dev webpack-dev-server",
+    "dev:win": "set NODE_ENV=dev&&webpack-dev-server",
+    "stagging": "NODE_ENV=stagging webpack",
+    "stagging:win": "set NODE_ENV=stagging&&webpack",
+    "prod": "NODE_ENV=production webpack -p",
+    "prod:win": "set NODE_ENV=production&&webpack -p"
   },
   "keywords": [
     "react",
