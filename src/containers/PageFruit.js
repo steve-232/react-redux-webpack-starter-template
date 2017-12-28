@@ -3,16 +3,16 @@ import { connect } from 'react-redux';
 import { addApple, addPear } from '../actions/FruitActions';
 
 class PageFruit extends Component {
-  addApple(e) {
-    const target = e.currentTarget;
+  addApple = e => {
+    const target = e.target;
     let currentVal = this.props.apple;
 
     target.textContent === '+' ? currentVal++ : currentVal--;
 
     this.props.addApple({apple:currentVal});
   }
-  addPear(e) {
-    const target = e.currentTarget;
+  addPear = e => {
+    const target = e.target;
     let currentVal = this.props.pear;
 
     target.textContent === '+' ? currentVal++ : currentVal--;
@@ -24,12 +24,12 @@ class PageFruit extends Component {
       <div className="wrapper">
         <h3>Fruit</h3>
         <p>Apple: {this.props.apple} &nbsp;&nbsp;
-          <button onClick={this.addApple.bind(this)}>+</button>
-          <button onClick={this.addApple.bind(this)}>-</button>
+          <button onClick={this.addApple}>+</button>
+          <button onClick={this.addApple}>-</button>
         </p>
         <p>Pear: {this.props.pear} &nbsp;&nbsp;
-          <button onClick={this.addPear.bind(this)}>+</button>
-          <button onClick={this.addPear.bind(this)}>-</button>
+          <button onClick={this.addPear}>+</button>
+          <button onClick={this.addPear}>-</button>
         </p>
       </div>
     )
@@ -45,10 +45,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addApple: (val) => {
+    addApple: val => {
       dispatch(addApple(val))
     },
-    addPear: (val) => {
+    addPear: val => {
       dispatch(addPear(val))
     }
   }

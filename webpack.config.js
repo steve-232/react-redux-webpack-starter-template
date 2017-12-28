@@ -43,11 +43,14 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
+        exclude: [
+          path.resolve(__dirname, 'node_modules'),
+          path.resolve(__dirname, 'webpack.config.js'),
+        ],
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["es2015", "react"]
+            presets: ["es2015", "stage-0", "react"]
           }
         }
       },
