@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
-import PageDashboard from '../pages/Dashboard';
-import LocationNav from '../LocationNav';
+import React, { Component } from "react";
+import { Route, Link, Switch } from "react-router-dom";
+import PageDashboard from "../pages/Dashboard";
+import LocationNav from "../LocationNav";
 
 export default class LayoutDashboard extends Component {
   render() {
@@ -13,6 +13,6 @@ export default class LayoutDashboard extends Component {
           <Route path="/" component={PageDashboard} />
         </Switch>
       </div>
-    )
+    );
   }
-};
+}

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import FormContactUs from '../FormContactUs';
+import React, { Component } from "react";
+import FormContactUs from "../FormContactUs";
 
 export default class PageContactLondon extends Component {
   render() {
@@ -9,6 +9,6 @@ export default class PageContactLondon extends Component {
         <br />
         <FormContactUs address="58 Crown Street" />
       </div>
-    )
+    );
   }
-};
+}

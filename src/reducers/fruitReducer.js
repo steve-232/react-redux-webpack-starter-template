@@ -1,6 +1,6 @@
-const initialState = {apple:1,pear:2};
+const initialState = { apple: 1, pear: 2 };
 
-export default (state=initialState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case "ADD_APPLE":
       state = Object.assign({}, state, action.payload);

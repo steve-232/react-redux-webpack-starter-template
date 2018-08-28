@@ -1,15 +1,11 @@
 {
   "name": "react-redux-webpack-starter-template",
   "version": "1.0.0",
-  "description": "React Redux Webpack starter template for React.js single page apps",
+  "description": "React Redux Webpack starter template for React.js Apps",
   "main": "src/index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev webpack-dev-server",
-    "dev:win": "set NODE_ENV=dev&&webpack-dev-server",
-    "stagging": "NODE_ENV=stagging webpack",
-    "stagging:win": "set NODE_ENV=stagging&&webpack",
-    "prod": "NODE_ENV=production webpack -p",
-    "prod:win": "set NODE_ENV=production&&webpack -p"
+    "dev": "webpack-dev-server --mode development",
+    "prod": "webpack --mode production"
   },
   "keywords": [
     "react",
@@ -21,30 +17,25 @@
   "author": "steve232np@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "classnames": "^2.2.5",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "axios": "^0.18.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2"
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^0.28.4",
-    "extract-text-webpack-plugin": "^2.1.2",
-    "node-sass": "^4.5.3",
-    "postcss": "^6.0.1",
-    "postcss-loader": "^2.0.5",
     "redux-logger": "^3.0.6",
-    "sass-loader": "^6.0.5",
-    "style-loader": "^0.18.2",
-    "uglifyjs-webpack-plugin": "^1.1.1",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "styled-components": "^3.4.5",
+    "webpack": "^4.17.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   },
   "browserslist": [
     "last 5 versions",

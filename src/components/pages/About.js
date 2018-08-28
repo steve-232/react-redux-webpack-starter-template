@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PageContact from './Contact';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import PageContact from "./Contact";
+import { Link } from "react-router-dom";
 
 export default class PageAbout extends Component {
   render() {
@@ -11,6 +11,6 @@ export default class PageAbout extends Component {
         <br />
         <Link to="contact">Contact us</Link>
       </div>
-    )
+    );
   }
-};
+}
