@@ -7,11 +7,12 @@ Redux example you can find on the _Fruit_ page. <br />
 
 Features:
 
-- Redux _(v4)_
-- React Router _(v4)_
+- Redux
+- React Router
 - ES6 _(Babel)_
-- Webpack _(v4)_ + Webpack Dev Server
-- Styled Components
+- Webpack + Webpack Dev Server
+- SASS or Styled Components
+- Jest + Enzyme
 
 ## Installation
 

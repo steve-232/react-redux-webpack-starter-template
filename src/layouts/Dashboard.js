@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Link, Switch } from "react-router-dom";
-import PageDashboard from "../pages/Dashboard";
-import LocationNav from "../LocationNav";
+import PageDashboard from "../routes/Dashboard";
+import LocationNav from "../components/LocationNav";
 
 export default class LayoutDashboard extends Component {
   render() {

@@ -1,0 +1,14 @@
+$white: #fff;
+$black: #000;
+
+$fontPath: "../fonts/";
+$imgPath: "../imgs/";
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FormContactUs from "../FormContactUs";
+import FormContactUs from "../components/FormContactUs";
 
 export default class PageContactLosAngeles extends Component {
   render() {

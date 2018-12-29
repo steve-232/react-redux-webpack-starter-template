@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Route, Link, Switch } from "react-router-dom";
-import PageHome from "../pages/Home";
-import PageAbout from "../pages/About";
-import PageContact from "../pages/Contact";
-import PageFruit from "../../containers/PageFruit";
-import Page404 from "../pages/404";
-import LocationNav from "../LocationNav";
+import PageHome from "../routes/Home";
+import PageAbout from "../routes/About";
+import PageContact from "../routes/Contact";
+import PageFruit from "../containers/PageFruit";
+import Page404 from "../routes/404";
+import LocationNav from "../components/LocationNav";
 
 export default class LayoutMain extends Component {
   render() {
